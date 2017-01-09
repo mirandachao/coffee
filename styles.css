@@ -1,0 +1,206 @@
+html body {
+	font-family: 'Lora', serif;
+	margin:0px;
+}
+
+.header {
+	background-color: #9ec9af;
+	padding: 10px;
+}
+
+.header h2 a {
+	padding:30px;
+	color: white;
+}
+
+#footer {
+	font-size:10px;
+	position:relative;
+	width:100%;
+}
+
+a {
+	color:black;
+	text-decoration: none;
+}
+
+html h1 {
+	font-size: 40px;
+}
+
+html h2 {
+	font-size:20px;
+}
+
+h3 {
+	font-size:20px;
+	color:white;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.story {
+	padding-left:40px;
+	padding-right:40px;
+	padding-top:30px;
+	padding:bottom:30px;
+}
+
+#title {
+	font-size:30;
+}
+
+#author {
+	font-style:italic;
+}
+
+.more {
+	width:50%;
+	column-count: 2;
+	column-rule-style:solid;
+	padding-left:10px;
+}
+
+#right {
+	margin-left:20px;
+}
+
+a {
+	color:#80b897;
+}
+
+figure {
+	column-count:3;
+	margin-top:40px;
+}
+
+#azindex {
+	position:fixed;
+	left:0;
+	width:20px;
+}
+
+#index li {
+	float: left;
+	height: 1em;
+	list-style-type: none;
+	margin: 0.2em 0.3em;
+	padding: 0;
+	width: 3em;
+}
+
+#index li {
+	margin: 0.2em 0.2em;
+}
+
+#index a:link, #index a:visited {
+	color: black;
+	display: block;
+	height: 1em;
+	padding: 0.2em .03em;
+	text-align: center;
+	text-decoration: none;
+	width: 3em;
+}
+
+#index a:hover {
+	background: #9ec9af;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.contentdiv {
+	padding-left: 30%;
+	padding-right: 30%;
+	position:relative;	
+	vertical-align: middle;
+}
+
+.welcomediv {
+	padding: 80px;
+	padding-top: 150px;
+	padding-bottom: 250px;
+	font-size:20px;
+	text-align:center;
+	color: black;
+    -webkit-animation: fade-in 2s 1;
+    -moz-animation: fade-in 2s 1;
+    -o-animation: fade-in 2s 1; 
+    animation: fade-in 2s 1; 
+}
+
+.button {
+	background: #9ec9af;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+}
+
+.info {
+	padding-bottom: 300px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.logo-small img {
+	align-self: left;
+	height: 80px;
+}
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media only screen and (max-width: 600px) { 
+
+  	.header h2 a {
+  		font-size:20px;
+  		padding:10px;
+		color: white;
+  	}
+
+  	.logo-small img {
+  		max-height: 50px;
+  	}
+
+  	.contentdiv {
+  		padding-left: 10px;
+  		padding-right: 10px;
+  	}
+
+  	.welcomediv {
+  		padding: 20px;
+  		padding-top:75px;
+  		padding-bottom:75px;
+  	}
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) { 
+	.contentdiv {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
