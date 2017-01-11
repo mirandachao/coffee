@@ -248,40 +248,56 @@ figure {
 	text-align:center;
 	display: flex;
 	flex-direction: column;
-  	align-content: center;
+  	justify-content: center;
+  	align-items: stretch;
+}
+
+.browse .button:hover {
+	cursor: pointer;
 }
 
 .browse .button {
 	max-width:400px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align:center;
 }
 
 .dropdown {
 	display: none;
 	position: relative;
 	max-width: 400px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background: #9ec9af;
-	color: #ffffff;
-	border-style: solid;
-	border-color: #9ec9af;
+	background: #ffffff;
+	color: #9ec9af;
+	transition: all 0.5s ease 0s;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 
 .dropdown a {
 	text-decoration: none;
-	display: block;
+	display: flex;
+	border-style: solid;
+	border-width: 0px 2px 2px 2px;
+	border-color: #9ec9af;
+	padding: 80px;
+	padding-top: 10px;
+	padding-bottom:10px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    text-align: center;
 }
 
 .dropdown a:hover {
-	background: #ffffff;
-	color: #9ec9af;
+	background: #cee4d7;
+	color: #000000;
 }
 
 .show {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	transition: all 0.5s ease 0s;
 }
 
 @-webkit-keyframes fade-in {
@@ -347,8 +363,7 @@ figure {
   	}
 
   	.browse .button {
-  		margin: 0px;
-  		margin-bottom: 15px;
+  		margin-top: 15px;
   	}
 
   	.contentdiv h1 {
@@ -357,6 +372,11 @@ figure {
 
   	.contentdiv h2 {
   		font-size: 18px;
+  	}
+
+  	.dropdown a {
+  		padding-right:40px;
+  		padding-left:40px;
   	}
 }
 
