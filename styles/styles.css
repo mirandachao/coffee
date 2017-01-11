@@ -8,10 +8,10 @@ html body {
 	padding: 10px;
 }
 
-.header h2 a {
-	padding:30px;
-	color: white;
-}
+	.header h2 a {
+		padding:30px;
+		color: white;
+	}
 
 #footer {
 	font-size:10px;
@@ -65,10 +65,8 @@ td {
 }
 
 .more {
-	width:50%;
-	column-count: 2;
-	column-rule-style:solid;
-	padding-left:10px;
+	width:100%;
+	display: flex;
 }
 
 #right {
@@ -85,8 +83,7 @@ figure {
 }
 
 #azindex {
-	position:fixed;
-	left:0;
+	padding-top: 50px;
 	width:20px;
 }
 
@@ -234,6 +231,19 @@ figure {
 	border-width: 2px;
 }
 
+.story a {
+	color: #9ec9af;
+	transition: all 0.5s ease 0s;
+}
+
+.story a:hover {
+	color: #000000;
+}
+
+.bodytext {
+	padding-top: 50px;
+}
+
 @-webkit-keyframes fade-in {
   0%   { opacity: 0; }
   100% { opacity: 1; }
@@ -251,7 +261,7 @@ figure {
   100% { opacity: 1; }
 }
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (min-width: 350px) and (max-width: 600px) { 
 
   	.header h2 a {
   		font-size:20px;
