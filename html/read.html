@@ -6,7 +6,8 @@
 	<link type="text/css" href="../styles/styles.css" rel="stylesheet">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../styles/common.js"></script>		
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 </head>
 
@@ -29,25 +30,27 @@
 			Browse by <a href="authors.html" class="link">AUTHOR</a>, by <a href="titles.html" class="link">TITLE</a>, or <a href="index.html">tell us how much time you have to read</a>.</h2><br>
 
 			<div class="browse">
-			<a href="">
-			<div class="button">
+			<a onclick="dropdownAuthor()">
+			<div class="button dropbtn">
 				<h3>BROWSE BY AUTHOR</h3>
 			</div>
 			</a>
-<!-- 				<p><img src="../assets/logo.png" height="20px">&nbsp; Browse authors alphabetically <a href="authors.html" class="link">>>></a></p>
-				<p><img src="../assets/logo.png" height="20px">&nbsp; Recently added authors <a href="authorsrecent.html" class="link">>>></a></p> -->
+			<div id="dropdown_author" class="dropdown">
+				<a href="authors.html">Alphabetically</a>
+				<a href="authorsrecent.html">Recently Added</a>
 			</div>
-			<div class="browse">
-			<a href="">
-			<div class="button">
+			<a onclick="dropdownTitle()">
+			<div class="button dropbtn">
 				<h3>BROWSE BY TITLE</h3>
 			</div>
 			</a>
+			<div id="dropdown_title" class="dropdown">
+				<a href="titles.html">Alphabetically</a>
+				<a href="titlesrecent.html">Recently Added</a>
+			</div>
 <!-- 				<p><img src="../assets/logo.png" height="20px">&nbsp; Browse titles alphabetically <a href="titles.html" class="link">>>></a></p>
 				<p><img src="../assets/logo.png" height="20px">&nbsp; Recently added stories <a href="titlesrecent.html" class="link">>>></a></p> -->
-			</div>
 
-			<div class="browse">
 			<a href="timeread.html">
 			<div class="button">
 				<h3>TAKE A COFFEE BREAK</h3>

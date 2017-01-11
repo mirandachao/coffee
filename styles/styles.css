@@ -246,12 +246,42 @@ figure {
 
 .browse {
 	text-align:center;
+	display: flex;
+	flex-direction: column;
+  	align-content: center;
 }
 
 .browse .button {
-	max-width:500px;
-	margin-left: 50px;
-	margin-right: 50px;
+	max-width:400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dropdown {
+	display: none;
+	position: relative;
+	max-width: 400px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #9ec9af;
+	color: #ffffff;
+	border-style: solid;
+	border-color: #9ec9af;
+	text-align: center;
+}
+
+.dropdown a {
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background: #ffffff;
+	color: #9ec9af;
+}
+
+.show {
+	display: block;
 }
 
 @-webkit-keyframes fade-in {
