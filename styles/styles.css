@@ -244,6 +244,16 @@ figure {
 	padding-top: 50px;
 }
 
+.browse {
+	text-align:center;
+}
+
+.browse .button {
+	max-width:500px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 @-webkit-keyframes fade-in {
   0%   { opacity: 0; }
   100% { opacity: 1; }
@@ -304,6 +314,11 @@ figure {
   		margin-bottom: 15px;
   		padding-top: 10px;
   		padding-bottom: 10px;
+  	}
+
+  	.browse .button {
+  		margin: 0px;
+  		margin-bottom: 15px;
   	}
 
   	.contentdiv h1 {
