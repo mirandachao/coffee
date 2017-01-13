@@ -56,8 +56,13 @@ td {
 	padding:bottom:30px;
 }
 
+.centered-div {
+	text-align: center;
+}
+
 #title {
 	font-size:30;
+	padding-top: 15px;
 }
 
 #author {
@@ -209,6 +214,10 @@ figure {
 	transition: all 0.5s ease 0s;
 }
 
+.text h1 a {
+	text-decoration: none;
+}
+
 .text a:hover {
 	color: #000000;
 }
@@ -242,6 +251,15 @@ figure {
 
 .bodytext {
 	padding-top: 50px;
+}
+
+.listtext {
+	display: flex;
+	flex-direction: column;
+}
+
+.listtext a {
+	color: #9ec9af;
 }
 
 .browse {
@@ -298,6 +316,10 @@ figure {
 	display: flex;
 	flex-direction: column;
 	transition: all 0.5s ease 0s;
+}
+
+.customize-checkboxes {
+	text-align: left;
 }
 
 @-webkit-keyframes fade-in {
@@ -377,6 +399,15 @@ figure {
   	.dropdown a {
   		padding-right:40px;
   		padding-left:40px;
+  	}
+
+  	.centered-div {
+  		padding-left: 20px;
+  		padding-right: 20px;
+  	}
+
+  	figure {
+  		column-count: 2;
   	}
 }
 
