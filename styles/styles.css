@@ -342,7 +342,7 @@ figure {
 @media only screen and (min-width: 350px) and (max-width: 600px) { 
 
   	.header h2 a {
-  		font-size:20px;
+  		font-size:18px;
   		padding:10px;
 		color: white;
   	}
